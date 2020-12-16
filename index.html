@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <title>Uber Eats</title>
 </head>
 <body>
     
-    <div class="box">
+    <div class="box" class="p-40">
         <div class="hero">
             
-            <div class="header">
+            <div class="header" id="nav">
                 <div class="col1">
                     <i class="fas fa-bars"></i>
                     <img src="images/logo.svg" alt="" style="height: 24px; width: 146px;">
                 </div>
+                <div class="none" id="s">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" name="" id="" placeholder=" Enter Delivery Address">
+                </div>
         
                 <div class="col2">
-                    <button class="btn">Sign In</button>
+                    <button class="btn" id="active-btn" style="margin: 5px 0;">Sign In</button>
                 </div>  
             </div> 
-            <img src="images/bg-l.svg" alt=""style="height: 100vh; margin:-5px 0;">
+            <img src="images/bg-l.svg" alt=""style="height: 100vh; margin:  0;">
             <div class="content">
                 <h1>Hungry? You're in the right place</h1>
                 <div class="row1">
@@ -40,21 +46,434 @@
                 </div>
                 <p>Sign In for your recent addresses</p>
             </div>
-            <img src="images/bg-r.svg" alt="" style="padding-left: 23vw; height: 100vh; margin:-5px 0;">
+            <img src="images/bg-r.svg" alt="" style="padding-left: 21vw; height: 100vh; margin:0;">
+        </div>
+       <div class="group p-40" >
+           <div class="group-row1">
+                <div class="coll">
+                    <h2>In a rush?</h2>
+                    <div class="txt">Here’s the fastest delivery for you</div>
+                </div>
+                <div class="col2">
+                    <div class="txt">View All</div>
+                    <div><i class="fas fa-arrow-left"></i><i class="fas fa-arrow-right"></i></div>
+                </div>
+           </div>
+           <div class="group-row2">
+                <div class="col">
+                    <div class="imgc"><img src="images/f1" alt=""></div>
+                    <div class="last">
+                        <div class="fname">
+                            <div class="fname-txt">Balaji Dosai</div>
+                            <div class="txt2">25–30 Min
+                            </div>
+                        </div>
+                        <div class="rate">4.5</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="imgc"><img src="images/f2.jpeg" alt=""></div>
+                    <div class="last">
+                        <div class="fname">
+                            <div class="fname-txt">Desert</div>
+                            <div class="txt2">15–25 Min
+                            </div>
+                        </div>
+                        <div class="rate">4.5</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="imgc"><img src="images/f3.jpeg" alt=""></div>
+                    <div class="last">
+                        <div class="fname">
+                            <div class="fname-txt">Hotel Zam</div>
+                            <div class="txt2">15–25 Min
+                            </div>
+                        </div>
+                        <div class="rate">4.5</div>
+                    </div>
+                </div>
+           </div>
+       </div>
+
+       <div class="group p-40" >
+            <div class="group-row1">
+                <div class="coll">
+                    <h2>Popular In your Area</h2>
+                </div>
+                <div class="col2">
+                    <div class="txt">View All</div>
+                    <div><i class="fas fa-arrow-left"></i><i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+            <div class="group-row2">
+                <div class="col">
+                    <div class="imgc"><img src="images/f4.jpeg" alt=""></div>
+                    <div class="last">
+                        <div class="fname">
+                            <div class="fname-txt">Balaji Dosai</div>
+                            <div class="txt2">25–30 Min
+                            </div>
+                        </div>
+                        <div class="rate">4.5</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="imgc"><img src="images/f5.jpeg" alt=""></div>
+                    <div class="last">
+                        <div class="fname">
+                            <div class="fname-txt">Desert</div>
+                            <div class="txt2">15–25 Min
+                            </div>
+                        </div>
+                        <div class="rate">4.5</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="imgc"><img src="images/f6.jpeg" alt=""></div>
+                    <div class="last">
+                        <div class="fname">
+                            <div class="fname-txt">Hotel Zam</div>
+                            <div class="txt2">15–25 Min
+                            </div>
+                        </div>
+                        <div class="rate">4.5</div>
+                    </div>
+                </div>
         </div>
         
+        <div class="connect">
+            <img src="images/logo2.svg" alt="">
+            <h2 style="margin: 0 12px;">There's more to love in the app.</h2>
+            <button class="btn" style="background-color:rgb(243, 243, 243); margin-right: 5px;"><i class="fab fa-android"></i>Android</button>
+            <button class="btn" style="background-color:rgb(243, 243, 243);"><i class="fab fa-apple"></i>iPhone</button>
+        </div>
 
+        <div class="group" >
+            <div class="group-row1">
+                 <div class="coll">
+                     <!-- <h2>In a rush?</h2>
+                     <div class="txt">Here’s the fastest delivery for you</div>
+                 </div>
+                 <div class="col2">
+                     <div class="txt">View All</div>
+                     <div><i class="fas fa-arrow-left"></i><i class="fas fa-arrow-right"></i></div> -->
+                 </div>
+            </div>
+            <div class="group-row2">
+                 <div class="col">
+                     <div class="imgc" style="height: 264px; width:464px; "><img src="images/a1.svg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Feed your employees</div>
+                             <div class="txt2">Create a business account
+                             </div>
+                         </div>
+                         <div class="rate"></div>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="imgc" style="height: 264px; width:464px;"><img src="images/a2.svg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Your restaurant, delivered</div>
+                             <div class="txt2">Add your restaurant
+                             </div>
+                         </div>
+                         <div class="rate"></div>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="imgc" style="height: 264px; width:464px;"><img src="images/a3.svg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Deliver the Eats</div>
+                             <div class="txt2">Sign up to deliver
+                             </div>
+                         </div>
+                         <div class="rate"></div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="group " >
+            <div class="group-row1">
+                 <div class="coll">
+                     <h2>Near You</h2>
+                     <div class="txt"></div>
+                 </div>
+                 <div class="col2">
+                     <div class="txt">View All</div>
+                     <div><i class="fas fa-arrow-left"></i><i class="fas fa-arrow-right"></i></div>
+                 </div>
+            </div>
+            <div class="group-row2">
+                 <div class="col">
+                     <div class="imgc"><img src="images/f7.jpeg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Balaji Dosai</div>
+                             <div class="txt2">25–30 Min
+                             </div>
+                         </div>
+                         <div class="rate">4.5</div>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="imgc"><img src="images/f8.jpeg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Desert</div>
+                             <div class="txt2">15–25 Min
+                             </div>
+                         </div>
+                         <div class="rate">4.5</div>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="imgc"><img src="images/f9.jpeg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Hotel Zam</div>
+                             <div class="txt2">15–25 Min
+                             </div>
+                         </div>
+                         <div class="rate">4.5</div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="group-row1">
+                <div class="coll">
+                    <h2>Cities near me</h2>
+                    <div class="txt"></div>
+                </div>
+                <div class="col2">
+                    <div class="txt">View All 500+ cities</div>
+                    <!-- <div><i class="fas fa-arrow-left"></i><i class="fas fa-arrow-right"></i></div> -->
+                </div>
+            </div>
+            <div class="map" style="width: 100%;">
+                <img src="images/map.png" alt="">
+            </div>
+        </div>
+        
+        <div class="group" >
+            <div class="group-row1">
+                 <div class="coll">
+                     <h2>Picked out for you</h2>
+                     <div class="txt"></div>
+                 </div>
+                 <div class="col2">
+                     <div class="txt">View All</div>
+                     <div><i class="fas fa-arrow-left"></i><i class="fas fa-arrow-right"></i></div>
+                 </div>
+            </div>
+            <div class="group-row2">
+                 <div class="col">
+                     <div class="imgc"><img src="images/f13.jpeg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Balaji Dosai</div>
+                             <div class="txt2">25–30 Min
+                             </div>
+                         </div>
+                         <div class="rate">4.5</div>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="imgc"><img src="images/f14.jpeg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Desert</div>
+                             <div class="txt2">15–25 Min
+                             </div>
+                         </div>
+                         <div class="rate">4.5</div>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="imgc"><img src="images/f15" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Hotel Zam</div>
+                             <div class="txt2">15–25 Min
+                             </div>
+                         </div>
+                         <div class="rate">4.5</div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="group" >
+            <div class="group-row1">
+                 <div class="coll">
+                     <h2>Authentic Dining</h2>
+                     <div class="txt"></div>
+                 </div>
+                 <div class="col2">
+                     <div class="txt">View All</div>
+                     <div><i class="fas fa-arrow-left"></i><i class="fas fa-arrow-right"></i></div>
+                 </div>
+            </div>
+            <div class="group-row2">
+                 <div class="col">
+                     <div class="imgc"><img src="images/f16.jpeg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Balaji Dosai</div>
+                             <div class="txt2">25–30 Min
+                             </div>
+                         </div>
+                         <div class="rate">4.5</div>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="imgc"><img src="images/f17.jpeg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Desert</div>
+                             <div class="txt2">15–25 Min
+                             </div>
+                         </div>
+                         <div class="rate">4.5</div>
+                     </div>
+                 </div>
+                 <div class="col">
+                     <div class="imgc"><img src="images/f18.jpeg" alt=""></div>
+                     <div class="last">
+                         <div class="fname">
+                             <div class="fname-txt">Hotel Zam</div>
+                             <div class="txt2">15–25 Min
+                             </div>
+                         </div>
+                         <div class="rate">4.5</div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+
+        
+    
+    </div>
+
+    <div class="group p-40">
+        <div class="group-row1">
+            <h2>Countries WIth Uber Eats</h2>
+        </div>
+        <div class="countries">
+            <ul>
+                <li>South Africa</li>
+                <li>Belgium</li>
+                <li>Ecuador</li>
+                <li>Ireland</li>
+                <li>Argentina</li>
+                <li>Sweden</li>
+                <li>Guatemala</li>
+            </ul>
+            <ul>
+                <li>Portugal</li>
+                <li>Switzerland</li>
+                <li>Italy</li>
+                <li>Chile</li>
+                <li>New Zealand</li>
+                <li>Colombia</li>
+                <li>Taiwan (ROC)</li>
+            </ul>
+            <ul>
+                <li>Japan</li>
+                <li>Canada</li>
+                <li>Australia</li>
+                <li>Poland</li>
+                <li>United Kingdom</li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li>Spain</li>
+                <li>Brazil</li>
+                <li>Mexico</li>
+                <li>France</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="foot">
+        <div class="fr1">
+            <div class="logos">
+                <img src="images/logo3.svg" alt="" style="margin-left: -36vw;">
+                <div class="stores">
+                    <img src="images/appst.svg" alt="">
+                    <img src="images/playst.png" alt="">
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>About Uber Eats</li>
+                    <li>Read our blog</li>
+                    <li>Create a business account</li>
+                    <li>Add your restaurant</li>
+                    <li>Sign up to deliver</li>
+                </ul>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>Get Help</li>
+                    <li>Read FAQs</li>
+                    <li>View all cities</li>
+                    <li>View all countries</li>
+                    <li>Restaurants near me</li>
+                    <li>Save on your first order</li>
+                    <li>English</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="fr2">
+            <div class="r1">
+                <div class="sm">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="terms">
+                    <div>Privacy Policy</div>
+                    <div>Terms</div>
+                    <div>Pricing</div>
+                </div>
+            </div>
+            <div class="r1">
+                <div>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+                </div>
+                <div>© 2020 Uber Technologies Inc.</div>
+            </div>
+        </div>
+    </div>
     <script>
-      window.onscroll = function() {scrollFunction()};
+        var myNav = $("#nav");
+        var myBtn = $("#active-btn");
+        var search=$('#s')
+            $(window).on('scroll', function() {
+            "use strict";
+            if ($(window).scrollTop() >= 50) {
+                myNav.addClass("active");
+                myBtn.addClass("act-btn");
+                search.removeClass('none');
+                search.addClass("search-nav");
+            } else {
+                myNav.removeClass("active");
+                myBtn.removeClass("act-btn");
+                search.removeClass("search-nav");
+                search.addClass("none");
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("header").style.background="white";
-  } else {
-    document.getElementById("header").style.padding = "80px 10px";
-  }
-}
-
+            }
+        });
     </script>
     
 </body>

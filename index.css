@@ -19,18 +19,19 @@ body{
 }
 
 .p-40{
-    padding: 0 40px 0 40px;
+    margin: 0 40px 0 40px;
 }
 
 .hero{
     background-color: #FFD7D2;
     display: flex;
-
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .hero>img{
     z-index: 1;
-    /* height: 100vh; */
+    height: 1000px;
 }
 
 .header .col1{
@@ -46,15 +47,19 @@ body{
     position: fixed;
     z-index: 1000;
     top: 0;
-    height: 3vh;
+    height: 6vh;
     width: 94vw;
-    padding: 36px 40px 36px 40px;
+    padding: 20px 40px 20px 40px;
     
 }
 
 .active {
     background-color: white;
   }
+
+.act-btn{
+    background-color:rgba(196, 196, 196, 0.507) !important;
+}
 
 .btn{
     background-color:#ffffff;
@@ -92,21 +97,32 @@ body{
 }
 
 .search{
-    padding: 16px;
+    padding: 14px;
     background-color: white;
+}
+
+.search-nav{
+    padding: 16px;
+    background-color:rgba(196, 196, 196, 0.507) !important;
+
+}
+
+.none{
+    display: none;
 }
 
 i{
     padding:0 10px;
 }
 
-.row1 input[type="text"]{
+input[type="text"]{
     font-family: "Uber Move Medium";
     font-size: 15px;
     outline: none;
     border: none;
     padding: 0;
     width: 31vw;
+    background-color: transparent;
 }
 
 .content h1{
@@ -128,4 +144,146 @@ i{
     padding: 14px 16px 0px 16px;
     text-align: justify;
     font-size: 20px;
+}
+
+.group{
+    margin-top: 64px;
+   
+
+}
+
+.group .group-row2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:24px;
+    margin-top: 24px;
+    font-family: "Uber Move Medium";
+}
+
+.group .group-row1, .group-row2 .last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col2{
+    display: flex;
+    justify-content: space-between;
+    width: 10vw;
+}
+
+.group .imgc{
+    /* background-color: aqua; */
+    width: 462px;
+    height: 180px;
+    bottom: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imgc img{
+    width: 100%;
+}
+
+h2{
+    font-size: 36px;
+    font-family: "Uber Move Bold";
+    margin: 0;
+}
+
+.txt{
+    color:#545454;
+    font-size:14px;
+    font-family: "Uber Move Medium";
+}
+
+.rate{
+    border-radius: 50%;
+    padding: 7px;
+    background-color:rgba(243, 243, 243, 0.842);
+}
+
+.fname-txt{
+    padding: 5px 0;
+}
+
+.connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.connect img{
+    width: 80px;
+    margin: 0 12px;
+}
+
+.map img{
+    margin: 24px 0;
+    width: 100%;
+}
+
+.countries{
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.countries ul li{
+    list-style: none;
+    margin-bottom: 24px;
+    font-family: "Uber Move Medium";
+}
+
+.foot{
+    background-color: black;
+    color: #ffffff;
+    padding: 70px 40px;
+    font-family: "Uber Move Medium";
+    margin-top: 70px;
+}
+
+.fr1{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    text-align: left;
+}
+
+.fr1 .logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+hr{
+    margin:  30px 0px;
+}
+
+.stores img{
+    height: 44px;
+    width: 134px;
+}
+.links ul li{
+    margin-bottom: 24px;
+}
+
+.links ul{
+    list-style: none;
+}
+
+.fr2{
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.r1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.terms{
+    display: flex;
+    justify-content: space-between;
 }
