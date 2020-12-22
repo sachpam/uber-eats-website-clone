@@ -31,7 +31,6 @@ body{
 
 .hero>img{
     z-index: 1;
-    height: 1000px;
 }
 
 .header .col1{
@@ -51,6 +50,20 @@ body{
     width: 94vw;
     padding: 20px 40px 20px 40px;
     
+}
+
+.img-l{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.img-r{
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100vh;
 }
 
 .active {
@@ -272,10 +285,6 @@ hr{
     list-style: none;
 }
 
-.fr2{
-    /* display: flex; */
-    /* flex-direction: column; */
-}
 
 .r1{
     display: flex;
