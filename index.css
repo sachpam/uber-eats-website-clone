@@ -24,6 +24,8 @@ body{
 
 .hero{
     background-color: #FFD7D2;
+    background-image: url("images/hero.jpg");
+    background-position: center;
     display: flex;
     height: 100vh;
     box-sizing: border-box;
@@ -38,6 +40,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo-hide{
+    display: none;
 }
 
 .header{
@@ -89,6 +95,7 @@ body{
     position: absolute;
     top: 220px;
     margin-left: 40px;
+    color: #ffffff;
 }
 
 .content .row1{
@@ -134,7 +141,7 @@ input[type="text"]{
     outline: none;
     border: none;
     padding: 0;
-    width: 31vw;
+    width: 25vw;
     background-color: transparent;
 }
 
@@ -252,9 +259,10 @@ h2{
 .foot{
     background-color: black;
     color: #ffffff;
-    padding: 70px 40px;
+    padding: 70px 40px 10px 40px;
     font-family: "Uber Move Medium";
     margin-top: 70px;
+    margin-bottom: 0;
 }
 
 .fr1{

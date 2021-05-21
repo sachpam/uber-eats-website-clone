@@ -17,7 +17,8 @@
             <div class="header" id="nav">
                 <div class="col1">
                     <i class="fas fa-bars"></i>
-                    <img src="images/logo.svg" alt="" style="height: 24px; width: 146px;">
+                    <img src="images/FOODIES1.png" alt="" style="height: 50px;" id="logob" class="logo-hide">
+                    <img src="images/logo.png" alt="" style="height: 50px;" id="logow" class="" >
                 </div>
                 <div class="none" id="s">
                     <i class="fas fa-map-marker-alt"></i>
@@ -30,9 +31,11 @@
             </div> 
             <!-- style="height: 100vh; margin:  0;" -->
             <!-- style="padding-left: 21vw; height: 100vh; margin:0;"  -->
-            <img src="images/bg-l.svg" alt=""  class="img-l">
+            <!-- <img src="images/bg-l.svg" alt=""  class="img-l"> -->
+
             <div class="content">
-                <h1>Hungry? You're in the right place</h1>
+                <h1>Your Favourite Food </h1>
+                <h1>Only One Order Away!</h1>
                 <div class="row1">
                     <div class="search">
                         <i class="fas fa-map-marker-alt"></i>
@@ -48,7 +51,7 @@
                 </div>
                 <p>Sign In for your recent addresses</p>
             </div>
-            <img src="images/bg-r.svg" alt="" class="img-r" >
+            <!-- <img src="images/bg-r.svg" alt="" class="img-r" > -->
         </div>
        <div class="group p-40" >
            <div class="group-row1">
@@ -144,12 +147,12 @@
                 </div>
         </div>
         
-        <div class="connect">
+        <!-- <div class="connect">
             <img src="images/logo2.svg" alt="">
             <h2 style="margin: 0 12px;">There's more to love in the app.</h2>
             <button class="btn" style="background-color:rgb(243, 243, 243); margin-right: 5px;"><i class="fab fa-android"></i>Android</button>
             <button class="btn" style="background-color:rgb(243, 243, 243);"><i class="fab fa-apple"></i>iPhone</button>
-        </div>
+        </div> -->
 
         <div class="group" >
             <div class="group-row1">
@@ -364,7 +367,7 @@
 
     <div class="group p-40">
         <div class="group-row1">
-            <h2>Countries WIth Uber Eats</h2>
+            <h2>Countries With FOODIES</h2>
         </div>
         <div class="countries">
             <ul>
@@ -409,7 +412,7 @@
     <div class="foot">
         <div class="fr1">
             <div class="logos">
-                <img src="images/logo3.svg" alt="" style="margin-left: -36vw;">
+                <img src="images/logo.png" alt="" style="height: 50px; width: 200px;">
                 <div class="stores">
                     <img src="images/appst.svg" alt="">
                     <img src="images/playst.png" alt="">
@@ -445,30 +448,30 @@
                     <i class="fab fa-twitter"></i>
                 </div>
                 <div class="terms">
-                    <div>Privacy Policy</div>
-                    <div>Terms</div>
-                    <div>Pricing</div>
+                    <div>© 2021 FOODIES Tech</div>
                 </div>
             </div>
-            <div class="r1">
-                <div>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
-                </div>
-                <div>© 2020 Uber Technologies Inc.</div>
-            </div>
+        
         </div>
     </div>
     <script>
+        var logob = $('#logob')
+        var logow = $('#logow')
         var myNav = $("#nav");
         var myBtn = $("#active-btn");
         var search=$('#s')
             $(window).on('scroll', function() {
             "use strict";
             if ($(window).scrollTop() >= 50) {
+                logow.addClass("none");
+                logob.removeClass("logo-hide");
                 myNav.addClass("active");
                 myBtn.addClass("act-btn");
                 search.removeClass('none');
                 search.addClass("search-nav");
             } else {
+                logob.addClass("logo-hide");
+                logow.removeClass("none");
                 myNav.removeClass("active");
                 myBtn.removeClass("act-btn");
                 search.removeClass("search-nav");
